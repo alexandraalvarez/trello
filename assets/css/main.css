@@ -6,90 +6,90 @@ body { /*Formato general al body*/
 }
 
 nav { /*formato general del nav*/
-	text-align: left;
-	margin: 0 auto; 
+	text-align: left; /*alinear texto a la izquierda*/
+	margin: 0 auto; /*sin margen*/
 	width: 100%; /*ancho al 100% del body*/
-	background-color: #210B61; 
-	padding-bottom: 0.1rem;
+	background-color: #210B61; /*color de fondo*/
+	padding-bottom: 0.1rem; /*para cubrir un poco hacia abajo*/
 }
 
 nav .fa { /* formato general de los elementos fa*/
 	color: #FFFFFF; /*color blanco*/
 	font-size: 1.25rem; /*tamaño*/
-	display: inline-block;
+	display: inline-block; /*para que sean bloques en línea*/
 }
 
-#fa-trello { /*margen hacia la izquierda*/
-	background-color: #642EFE;
-	padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-	margin: 0.5rem 0rem 0.5rem 0.5rem; 
+#fa-trello { /*primer elemento del nav*/
+	background-color: #642EFE; /*color del fondo*/
+	padding: 0.25rem 0.5rem 0.25rem 0.5rem; /*para darle el aspecto de input*/
+	margin: 0.5rem 0rem 0.5rem 0.5rem; /*margen*/
 }
 
-#fa-search {
-	background-color: #642EFE;
-	padding: 0.25rem 0.5rem 0.25rem 10rem;
-	margin-left: 0.5rem; 	
+#fa-search { /*segundo elemento del nav*/
+	background-color: #642EFE; /*color del fondo*/
+	padding: 0.25rem 0.5rem 0.25rem 10rem; /*para darle el aspecto de input*/
+	margin-left: 0.5rem; /*margen izquierdo*/ 	
 }
 
-#trello {
-	color: #642EFE;
-	margin: 0.5rem 0rem 0.5rem 17rem;
+#trello { /*título del navegador*/
+	color: #642EFE; /*color*/
+	margin: 0.5rem 0rem 0.5rem 17rem; /*margen*/
 }
 
-nav .fa-color {
-	background-color: #642EFE;
-	margin: 1rem 0rem 1rem 0.5rem; 
+nav .fa-color { /*formato general de los íconos del final del nav*/
+	background-color: #642EFE; /*color del fondo*/
+	margin: 1rem 0rem 1rem 0.5rem; /*margen*/
 }
 
-nav .fa-plus{
-	padding: 0.25rem 0.3rem 0.25rem 0.3rem;
-	margin-left: 28rem; 
+nav .fa-plus{ /*formato detallado del ícono +*/
+	padding: 0.25rem 0.3rem 0.25rem 0.3rem;/*para darle el aspecto de botón*/
+	margin-left: 28rem; /*margen*/
 }
 
-nav .fa-info {
-	padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+nav .fa-info {/*formato detallado del ícono info*/
+	padding: 0.25rem 0.5rem 0.25rem 0.5rem; /*para darle el aspecto de botón*/
 }
 
-nav .fa-bell {
-	padding: 0.25rem 0.2rem 0.25rem 0.2rem;
+nav .fa-bell {/*formato detallado del ícono campana*/
+	padding: 0.25rem 0.2rem 0.25rem 0.2rem; /*para darle el aspecto de botón*/
 }
 
-nav .perfil {
-	vertical-align: middle;
-	height: 1.75rem;
-	width: 1.75rem;
-	margin: 0.5rem 0rem 0.5rem 0.5rem; 
+nav .perfil { /*formato de la imagen de perfil*/
+	vertical-align: middle; /*alinear al centro*/
+	height: 1.75rem; /*altura*/
+	width: 1.75rem; /*ancho*/
+	margin: 0.5rem 0rem 0.5rem 0.5rem; /*margen*/
 }
 
 /*formato general del header*/
-header {
-	color: #FFFFFF;
+header { /*formato general del header*/
+	color: #FFFFFF; /*color del texto*/
 }
 
-header h3,i,a {
-	display: inline-block;
-	color: #FFFFFF;
+header h3,i,a { /*formato general de todos los elementos del header*/
+	display: inline-block; /*para que sean bloques en línea*/
+	color: #FFFFFF;/*color del texto*/
 }
 
-header h3 {
-	padding-left: 1rem; 
+header h3 {/*formato detallado del título*/
+	padding-left: 1rem; /*para ubicarlo dentro de su sección*/
 }
 
-header .fa-star,.fa-lock{
-	padding-left: 1rem;
+header .fa-star,.fa-lock{ /*para ubicar los mini íconos*/
+	padding-left: 1rem; /*para ubicarlo dentro de su sección*/
 }
 
-header a {
-	text-decoration: none;
-	padding-left: 0.5rem;
+header a { /*formato general de los elementos de navegación*/
+	text-decoration: none; /*sin decoración*/
+	padding-left: 0.5rem; /*para ubicarlo dentro de su sección*/
 }
 
-header .fa-ellipsis-h {
-	padding-left: 48rem;
+header .fa-ellipsis-h { /*formato detallado del mini ícono*/
+	padding-left: 48rem; /*para ubicarlo dentro de su sección*/
 }
 
 /*formato general de la section*/
 
-#creator {
+#creator { /*formato detallado del input*/
 	margin-left: 1rem;
 }
