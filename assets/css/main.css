@@ -1,0 +1,95 @@
+body { /*Formato general al body*/
+	margin: 0 auto; /*para que no tenga márgenes con los bordes*/
+	background-color: #642EFE; /*color de fondo*/
+	background-size: cover; /*con eso cubre todo el fondo*/
+	font-family: 'Source Sans Pro', sans-serif; /*tipo de fuente*/
+}
+
+nav { /*formato general del nav*/
+	text-align: left;
+	margin: 0 auto; 
+	width: 100%; /*ancho al 100% del body*/
+	background-color: #210B61; 
+	padding-bottom: 0.1rem;
+}
+
+nav .fa { /* formato general de los elementos fa*/
+	color: #FFFFFF; /*color blanco*/
+	font-size: 1.25rem; /*tamaño*/
+	display: inline-block;
+}
+
+#fa-trello { /*margen hacia la izquierda*/
+	background-color: #642EFE;
+	padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+	margin: 0.5rem 0rem 0.5rem 0.5rem; 
+}
+
+#fa-search {
+	background-color: #642EFE;
+	padding: 0.25rem 0.5rem 0.25rem 10rem;
+	margin-left: 0.5rem; 	
+}
+
+#trello {
+	color: #642EFE;
+	margin: 0.5rem 0rem 0.5rem 17rem;
+}
+
+nav .fa-color {
+	background-color: #642EFE;
+	margin: 1rem 0rem 1rem 0.5rem; 
+}
+
+nav .fa-plus{
+	padding: 0.25rem 0.3rem 0.25rem 0.3rem;
+	margin-left: 28rem; 
+}
+
+nav .fa-info {
+	padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+}
+
+nav .fa-bell {
+	padding: 0.25rem 0.2rem 0.25rem 0.2rem;
+}
+
+nav .perfil {
+	vertical-align: middle;
+	height: 1.75rem;
+	width: 1.75rem;
+	margin: 0.5rem 0rem 0.5rem 0.5rem; 
+}
+
+/*formato general del header*/
+header {
+	color: #FFFFFF;
+}
+
+header h3,i,a {
+	display: inline-block;
+	color: #FFFFFF;
+}
+
+header h3 {
+	padding-left: 1rem; 
+}
+
+header .fa-star,.fa-lock{
+	padding-left: 1rem;
+}
+
+header a {
+	text-decoration: none;
+	padding-left: 0.5rem;
+}
+
+header .fa-ellipsis-h {
+	padding-left: 48rem;
+}
+
+/*formato general de la section*/
+
+#creator {
+	margin-left: 1rem;
+}

@@ -15,7 +15,7 @@ document.getElementById("creator").addEventListener("focus", function(){  /*para
 	var listHomework = document.createElement("input"); /*crear un input para la lista de tareas*/
 	listHomework.setAttribute("type","text");/*input tipo texto*/
 	listHomework.setAttribute("placeholder","Agrega una tarea"); /*dirá agregar tareas*/
-	listHomework.classList.add("class","inputLists")*/
+	listHomework.classList.add("class","inputLists")/**/
 	});
 
 
