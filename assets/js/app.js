@@ -1,6 +1,6 @@
 /*Usando addEventListener*/
-/*var inp = document.getElementById("creator");*/
-document.getElementsByClassName("creator")[0].addEventListener("focus", function(){  /*para que se active al ponerle click*/
+/*var listCreator = document.getElementByClassName("list-creator");*/
+document.getElementsByClassName("list-creator")[0].addEventListener("focus", function(){  /*para que se active al ponerle click*/
 	var buttonListCreator = document.createElement('button');/*para crear el botón*/
 	buttonListCreator.setAttribute("id","listCreator");/*para darle id al botón*/
 	buttonListCreator.setAttribute("type","button");/*para recordarle que es un tipo botón*/	
@@ -11,25 +11,27 @@ document.getElementsByClassName("creator")[0].addEventListener("focus", function
 	buttonListCreator.appendChild(textButtonCreator);/*enlazando el texto del botón a su padre botón*/
 	divCreator.appendChild(buttonListCreator);
 
-	})
-
 
 	/*tiene que aparecer un div nuevo con el nombre que puso el usuario en el input del html*/
-	/*var listsContainer = document.getElementById("lists-container"); /*para darle un padre al div que tendrá las listas*/
-	/*var lists = document.createElement("div"); /*para guardar cada lista nueva*/
-	/*lists.setAttribute("class","lists"); /*para asignar una clase a cada lista que se cree*/
-	/*listsContainer.appendChild(lists); /*para darle padre a cada lista que se cree*/
+	var listsContainer = document.getElementById("lists-container"); /*para darle un padre al div que tendrá las listas*/
+	var lists = document.createElement("div"); /*para guardar cada lista nueva*/
+	lists.setAttribute("class","lists"); /*para asignar una clase a cada lista que se cree*/
+	listsContainer.appendChild(lists); /*para darle padre a cada lista que se cree*/
 
 	/*crear un título para la lista y rescatarlo del input original al hacer click en guardar*/
-	/*var titleList = document.createElement("h4"); /*título de la lista nueva*/
-	/*var textTitleList = document.createTextNode("valor recatado del input original");
+	var titleList = document.createElement("h4"); /*título de la lista nueva*/
+	var textTitleList = document.createTextNode("");
 	titleList.appendChild(textTitleList); /*para que el nodo texto se una al h4*/
-	/*lists.appendChild(titleList); /*para poner el título de la lista dentro del div lista*/
+	lists.appendChild(titleList); /*para poner el título de la lista dentro del div lista*/
 
-	/*buttonListCreator.addEventListener("click", function(){ /*llamo al botón creado arriba y le agrego evento*/
-		/* = document.getElementsByClassName('creator')[0].value;//aca con .value recupero lo que ingresó el usuario, para luego utilizarlo
-		document.getElementsByClassName('inputLists')[0].value = "";//aca le indico que una vez ya rescatado lo ingresado, quede limpio nuevamente mi input
-		console.log(homeWork);*/
+	buttonListCreator.addEventListener("click", function(){ /*llamo al botón creado arriba y le agrego evento*/
+		var newTitle = document.getElementsByClassName('list-creator')[0].value;//aca con .value recupero lo que ingresó el usuario, para luego utilizarlo
+		document.getElementsByClassName('list-creator')[0].value = "";//aca le indico que una vez ya rescatado lo ingresado, quede limpio nuevamente mi input	
+		textTitleList.value = newTitle;
+
+		})
+	})
+		
 	
 	/*input para la lista de tareas*/
 	/*var listHomework = document.createElement("input"); /*crear un div para la lista de tareas*/

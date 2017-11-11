@@ -90,6 +90,15 @@ header .fa-ellipsis-h { /*formato detallado del mini ícono*/
 
 /*formato general de la section*/
 
-section .creator { /*formato detallado del input*/
-	margin-left: 1rem;
+section .list-creator { /*formato detallado del input*/
+	margin-left: 1rem;	
+}
+
+/*section .lists-container {
+
+}*/
+
+section .lists {
+	display: inline-block;
+	background-color: #FFFFFF;
 }
