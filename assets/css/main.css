@@ -90,6 +90,6 @@ header .fa-ellipsis-h { /*formato detallado del mini ícono*/
 
 /*formato general de la section*/
 
-#creator { /*formato detallado del input*/
+section .creator { /*formato detallado del input*/
 	margin-left: 1rem;
 }
