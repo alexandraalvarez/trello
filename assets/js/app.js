@@ -51,7 +51,7 @@ document.getElementsByClassName("list-creator")[0].addEventListener("focus", fun
 
 			/*creando el botón para agregar tareas*/
 			var buttonAdd = document.createElement('button');/*para crear el botón*/
-			buttonAdd.setAttribute("id","homeWorkAdd");/*para darle id al botón*/
+			buttonAdd.setAttribute("id","buttonAdd");/*para darle id al botón*/
 			buttonAdd.setAttribute("type","button");/*para recordarle que es un tipo botón*/	
 
 			/*creando su nodo de texto para que diga añadir*/
@@ -62,6 +62,7 @@ document.getElementsByClassName("list-creator")[0].addEventListener("focus", fun
 			/*función para que al hacer click en añadir aparezca la nueva tarea*/
 			buttonAdd.addEventListener("click", function(){ /*al dar click sobre el botón añadir*/
 				var homeWork = document.createElement("p");/*para mostrar la nueva tarea*/
+				homeWork.setAttribute("class","homeWorkCard")
 				var textHomeWork = document.createTextNode("");
 				homeWork.appendChild(textHomeWork); /*para darle el nodo texto al párrafo de la tarea*/
 				lists.appendChild(homeWork); /*agregando la tarea al div lists*/
@@ -69,8 +70,7 @@ document.getElementsByClassName("list-creator")[0].addEventListener("focus", fun
 				var newHomeWork = document.getElementsByClassName("homeWorkLists")[0].value; /*acá con .value recupero lo que ingresó el usuario, para luego utilizarlo*/
 				document.getElementsByClassName("homeWorkLists")[0].value = ""; /*acá le indico que una vez ya rescatado lo ingresado, quede limpio nuevamente mi textarea*/
 				textHomeWork.textContent = newHomeWork; /*le agrego el texto ingresado en el textarea como tarea de la lista*/
-				var homeWorkBefore = 
-				lists.insertBefore(homeWork, );
+				lists.insertBefore(homeWork,listHomework); /*para que la nueva tarea quede siempre justo antes de el textarea*/
 			})
 	
 		})

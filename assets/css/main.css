@@ -90,46 +90,61 @@ header .fa-ellipsis-h { /*formato detallado del mini ícono*/
 
 /*formato general de la section*/
 
-#div-creator {
-	display: inline-block;
-	width: 20%;
-	background-color: #D8D8D8;
-	margin-left: 1rem;
-	padding: 0.5rem 0 0.5rem 0;
+#div-creator { /*para darle formato al formulario de ingreso de listas*/
+	display: inline-block; /*para que aparezca como bloque en línea*/
+	width: 20%; /*ancho 20% de su padre*/
+	background-color: #D8D8D8; /*color de letras*/
+	margin-left: 1rem; /*margen de la izquierda*/
+	padding: 0.5rem 0 0.5rem 0; /*un poco de relleno para que se vean centrados los botones del formulario */
 }
 
-#buttonCreator {
-	background-color: #01DF01;
-	padding: 0.3rem;
-	margin: 0.3rem 0 0 0.35rem;
+#buttonCreator { /*formato del botón guardar*/
+	background-color: #01DF01; /*color de fondo*/
+	padding: 0.3rem; /*relleno*/
+	margin: 0.3rem 0 0 0.35rem; /*margen de los lados*/
 }
 
 section .list-creator { /*formato detallado del input*/
-	margin-left: 0.5rem;
-	padding: 0.3rem;	
+	margin-left: 0.5rem; /*margen desde la izquierda*/
+	padding: 0.3rem; /*relleno*/
 }
 
-#lists-container {
-	display: inline-block;
+#lists-container { /*formato general del div contenerdor de las listas*/
+	display: inline-block; /*para que aparezca como bloque en línea*/
 }
 
-section .lists {
-	display: inline-block;
-	background-color: #D8D8D8;
-	margin: 1rem;
+section .lists { /*formato general de las listas*/
+	background-color: #D8D8D8; /*color de fondo*/
+	margin: 1rem; /*margen*/
 }
 
-section .lists p {
-	font-weight: bold;
-	padding-left: 0.5rem; 
+section .lists p { /*formato de los párrafos de nombre de las listas*/
+	font-size: 1.5rem; /*tamaño de la fuente*/
+	font-weight: bold; /*para que aparezca en negrita*/
+	margin: 0rem 0.3rem 0.5rem 0.35rem; /*margen de los lados*/
+	padding: 0.5rem 0.5rem 0 0.35rem; /*relleno desde la izquierda*/
 }
 
-section .add-card {
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
-	color: #6E6E6E;
+section .add-card { /*formato del link para que aparezca el formulario de insertar tarjeta*/
+	padding: 0 0.5rem 0 0.5rem; /*relleno de los lados*/
+	color: #6E6E6E; /*color del texto*/
 }
 
-section .homeWorkLists {
-	margin: 0 0.5rem 0.5rem 0.5rem; 
+section .homeWorkLists { /*formato del textarea*/
+	display: block; /*para que se comporte como bloque*/
+	margin: 0 0.5rem 0.5rem 0.5rem; /*margen*/
+}
+
+#buttonAdd { /*formato del botón guardar*/
+	background-color: #01DF01; /*color de fondo*/
+	padding: 0.3rem; /*relleno*/
+	margin: 0rem 0.3rem 0.5rem 0.35rem; /*margen*/
+}
+
+section .lists .homeWorkCard { /*formato de los párrafos de tareas*/
+	background-color: #F2F2F2; /*color de fondo*/
+	font-size: 1rem; /*tamaño de la fuente*/
+	font-weight: normal; /*fuente grosor normal*/
+	margin: 0rem 0.5rem 0.5rem 0.5rem; /*margen de los lados*/
+	padding: 0.25rem 0.5rem 0.25rem 0.5rem; /*relleno desde la izquierda*/
 }
