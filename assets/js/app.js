@@ -1,11 +1,20 @@
-/*Usando addEventListener*/
-/*var listCreator = document.getElementByClassName("list-creator");*/
-document.getElementsByClassName("list-creator")[0].addEventListener("focus", function(){  /*para que se active al ponerle click*/
+/*partiendo del a que dice añadir una lista*/
+var addList = document.getElementById("add-list"); /*para llamar al a */
+
+/*función para que al hacer focus sobre a, éste desaparezca y en su lugar se vea el formulario*/
+addList.addEventListener("focus", function() {
+	var divCreator = document.getElementById("div-creator");/*div padre del formulario*/
+	divCreator.removeChild(addList); /*para que desaparezca el link a*/
+
+	var listCreator = document.createElement("input"); /*creando el input para agregar las listas*/
+	listCreator.setAttribute("type","text"); /*para que sea tipo texto*/
+	listCreator.setAttribute("placeholder","Añadir una lista"); /*para que diga añadir una lista adentro*/
+	listCreator.setAttribute("class","list-creator"); /*dándole clase*/
+	divCreator.appendChild(listCreator); /*dándole padre al input de las listas*/
+
 	var buttonCreator = document.createElement('button');/*para crear el botón*/
 	buttonCreator.setAttribute("id","buttonCreator");/*para darle id al botón*/
-	buttonCreator.setAttribute("type","button");/*para recordarle que es un tipo botón*/	
-
-	var divCreator = document.getElementById("div-creator");/*enlazando el botón a su div padre*/
+	buttonCreator.setAttribute("type","button");/*para recordarle que es un tipo botón*/		
 	
 	var textButtonCreator = document.createTextNode("Guardar"); /*creando nodo de texto del botón*/
 	buttonCreator.appendChild(textButtonCreator);/*enlazando el texto del botón a su padre botón*/
@@ -31,8 +40,8 @@ document.getElementsByClassName("list-creator")[0].addEventListener("focus", fun
 
 		/*creando el elemento pinchable a para que aparezca el textarea*/
 		var addCard = document.createElement("a"); /*para que lleve el texto agregar tarjeta*/
-		addCard.setAttribute("class","add-card");
-		addCard.setAttribute("href","#");
+		addCard.setAttribute("class","add-card"); /*para darle una clase*/
+		addCard.setAttribute("href","#"); /*para que aparezca como link*/
 
 		/*nodo de texto de a*/
 		var textAddCard = document.createTextNode("Añadir una tarea...");/*creando nodo texto y su contenido*/
@@ -41,7 +50,7 @@ document.getElementsByClassName("list-creator")[0].addEventListener("focus", fun
 
 		/*agregando una función y un evento para que al pinchar desaparezca a y apareza el input*/
 		addCard.addEventListener("focus", function(){ /*para que a desaparezca y poder ingresar los elementos textarea y botón agregar*/
-			lists.removeChild(addCard);
+			lists.removeChild(addCard); /*para que desaparezca el link a*/
  
  		/*textearea para la lista de tareas*/
 			var listHomework = document.createElement("textarea"); /*crear un div para la lista de tareas*/
@@ -76,8 +85,7 @@ document.getElementsByClassName("list-creator")[0].addEventListener("focus", fun
 		})
 	})
 })
-		
-	
+			
 
 
 /*necesito desactivar el focus para que dejen de aparecer botones guardar*/

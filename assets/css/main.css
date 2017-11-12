@@ -90,6 +90,12 @@ header .fa-ellipsis-h { /*formato detallado del mini ícono*/
 
 /*formato general de la section*/
 
+#add-list { /*formato del link a de añadir una lista*/
+	color: #6E6E6E; /*color de la fuente*/
+	padding: 0.5rem; /*relleno*/
+	margin: 0 0.3rem 0 0.3rem; /*margen desde la izquierda*/
+}
+
 #div-creator { /*para darle formato al formulario de ingreso de listas*/
 	display: inline-block; /*para que aparezca como bloque en línea*/
 	width: 20%; /*ancho 20% de su padre*/
@@ -114,6 +120,7 @@ section .list-creator { /*formato detallado del input*/
 }
 
 section .lists { /*formato general de las listas*/
+	float: left;
 	background-color: #D8D8D8; /*color de fondo*/
 	margin: 1rem; /*margen*/
 }
