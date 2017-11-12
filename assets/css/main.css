@@ -90,8 +90,23 @@ header .fa-ellipsis-h { /*formato detallado del mini ícono*/
 
 /*formato general de la section*/
 
+#div-creator {
+	display: inline-block;
+	width: 20%;
+	background-color: #D8D8D8;
+	margin-left: 1rem;
+	padding: 0.5rem 0 0.5rem 0;
+}
+
+#buttonCreator {
+	background-color: #01DF01;
+	padding: 0.3rem;
+	margin: 0.3rem 0 0 0.35rem;
+}
+
 section .list-creator { /*formato detallado del input*/
-	margin-left: 1rem;	
+	margin-left: 0.5rem;
+	padding: 0.3rem;	
 }
 
 /*section .lists-container {
@@ -100,5 +115,15 @@ section .list-creator { /*formato detallado del input*/
 
 section .lists {
 	display: inline-block;
-	background-color: #FFFFFF;
+	background-color: #D8D8D8;
+	margin: 1rem;
+}
+
+section .lists p {
+	font-weight: bold;
+	padding-left: 0.5rem; 
+}
+
+section .inputLists {
+	margin: 0 0.5rem 0.5rem 0.5rem; 
 }
