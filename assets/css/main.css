@@ -109,9 +109,9 @@ section .list-creator { /*formato detallado del input*/
 	padding: 0.3rem;	
 }
 
-/*section .lists-container {
-
-}*/
+#lists-container {
+	display: inline-block;
+}
 
 section .lists {
 	display: inline-block;

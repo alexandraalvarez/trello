@@ -10,10 +10,6 @@ document.getElementsByClassName("list-creator")[0].addEventListener("focus", fun
 	var textButtonCreator = document.createTextNode("Guardar"); /*creando nodo de texto del botón*/
 	buttonListCreator.appendChild(textButtonCreator);/*enlazando el texto del botón a su padre botón*/
 	divCreator.appendChild(buttonListCreator);
-
-
-
-
 	
 
 	buttonListCreator.addEventListener("click", function(){ /*llamo al botón creado arriba y le agrego evento*/
@@ -39,6 +35,8 @@ document.getElementsByClassName("list-creator")[0].addEventListener("focus", fun
 		listHomework.setAttribute("placeholder","Agrega una tarea"); /*dirá agregar tareas*/
 		listHomework.setAttribute("class","inputLists")/*clase al input para poder llamarlo*/
 		lists.appendChild(listHomework);
+
+
 
 		})
 	})
