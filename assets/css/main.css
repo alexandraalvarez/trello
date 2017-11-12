@@ -124,6 +124,12 @@ section .lists p {
 	padding-left: 0.5rem; 
 }
 
-section .inputLists {
+section .add-card {
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	color: #6E6E6E;
+}
+
+section .homeWorkLists {
 	margin: 0 0.5rem 0.5rem 0.5rem; 
 }
